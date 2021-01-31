@@ -25,6 +25,15 @@ iabbrev psvm public static void main(String[] args) {<CR>}
 iabbrev syso System.out.println("");
 iabbrev syse System.err.println("");
 
+" autocomplete brackets and braces
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap {<Space> {  }<left><left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
+
 " color scheme
 if (has("termguicolors"))
   set termguicolors
