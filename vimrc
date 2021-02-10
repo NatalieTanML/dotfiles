@@ -22,8 +22,8 @@ set backupdir=~/.backup
 
 " abbreviations
 iabbrev psvm public static void main(String[] args) {<CR>}
-iabbrev syso System.out.println("");
-iabbrev syse System.err.println("");
+iabbrev syso System.out.println("
+iabbrev syse System.err.println("
 
 " autocomplete brackets and braces
 inoremap " ""<left>
