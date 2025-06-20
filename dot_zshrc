@@ -1,0 +1,16 @@
+# source antidote
+source ~/.antidote/antidote.zsh
+
+# initialize plugins statically with ${ZDOTDIR:-~}/.zsh_plugins.txt
+antidote load
+
+# configure path
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$PATH:/snap/bin"
+
+# use vim as default
+export EDITOR=vim
+export VISUAL="$EDITOR"
+
+# start starship prompt
+eval "$(starship init zsh)"
